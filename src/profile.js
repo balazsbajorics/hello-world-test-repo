@@ -15,7 +15,7 @@ import {
 
 export var Profile = (props) => {
   return (
-    <div>
+    <div data-uid='09b'>
       <div
         style={{
           width: '100%',
@@ -29,6 +29,7 @@ export var Profile = (props) => {
           boxShadow: '0px 2px 33px #674168',
           left: 0,
         }}
+        data-uid='46e'
       >
         <div
           style={{
@@ -43,10 +44,11 @@ export var Profile = (props) => {
             textShadow:
               '0px 1px 1px #646464, 0px 4px 1px rgba(0, 0, 0, 0.25)',
           }}
+          data-uid='f59'
         >
           Things I want to do
         </div>
-        <div style={{ width: '130%' }}>
+        <div style={{ width: '130%' }} data-uid='750'>
           <div
             style={{
               color: 'var(--orange)',
@@ -60,6 +62,7 @@ export var Profile = (props) => {
               textShadow:
                 '0px 1px 1px #646464, 0px 8px 1px rgba(0, 0, 0, 0.25)',
             }}
+            data-uid='598'
           >
             BBeffore I Go
           </div>
@@ -72,6 +75,7 @@ export var Profile = (props) => {
           flexDirection: 'column',
           ...props.style,
         }}
+        data-uid='ffe'
       >
         <div
           style={{
@@ -81,18 +85,16 @@ export var Profile = (props) => {
             justifyContent: 'space-between',
             padding: '40px',
           }}
+          data-uid='58c'
         >
-          <UserProPic
+          <BirbWatcher
             style={{
-              borderRadius: '50%',
-              border: '6px solid var(--purple)',
-              overflow: 'hidden',
-              background: 'var(--orange)',
-              position: 'relative',
-              flexBasis: 160,
-              height: 160,
+              width: 121,
+              boxShadow:
+                '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
+              padding: '10px 0px 10px 10px',
             }}
-            color='var(--purple)'
+            data-uid='3c1'
           />
           <div
             style={{
@@ -100,6 +102,7 @@ export var Profile = (props) => {
               flexDirection: 'column',
               justifyContent: 'space-between',
             }}
+            data-uid='c23'
           >
             <div
               style={{
@@ -107,10 +110,11 @@ export var Profile = (props) => {
                 fontFamily: 'primary',
                 fontSize: '38px',
               }}
+              data-uid='63a'
             >
               McKayyyla Lannkau
             </div>
-            <div>
+            <div data-uid='47a'>
               <div
                 style={{
                   fontFamily: 'var(--secondary)',
@@ -124,9 +128,10 @@ export var Profile = (props) => {
                   display: 'flex',
                   justifyContent: 'space-between',
                 }}
+                data-uid='d91'
               >
-                <div>Primary Location: </div>
-                <div>New York City, USA</div>
+                <div data-uid='ebd'>Primary Location: </div>
+                <div data-uid='db2'>New York City, USA</div>
               </div>
               <div
                 style={{
@@ -141,9 +146,10 @@ export var Profile = (props) => {
                   display: 'flex',
                   justifyContent: 'space-between',
                 }}
+                data-uid='428'
               >
-                <div>Living Since: </div>
-                <div>1999</div>
+                <div data-uid='5f3'>Living Since: </div>
+                <div data-uid='3e5'>1999</div>
               </div>
               <div
                 style={{
@@ -158,14 +164,15 @@ export var Profile = (props) => {
                   display: 'flex',
                   justifyContent: 'space-between',
                 }}
+                data-uid='c20'
               >
-                <div>Life Level: </div>
-                <div>Advanced</div>
+                <div data-uid='17a'>Life Level: </div>
+                <div data-uid='bb9'>Advanced</div>
               </div>
             </div>
           </div>
         </div>
-        <DecorativeLines />
+        <DecorativeLines data-uid='360' />
         <Checkerboard
           style={{
             height: 335,
@@ -177,6 +184,7 @@ export var Profile = (props) => {
           }}
           color1='var(--yellow)'
           color2='var(--orange)'
+          data-uid='f18'
         >
           <Cryophile
             style={{
@@ -184,14 +192,7 @@ export var Profile = (props) => {
                 '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
               borderRadius: '50%',
             }}
-          />
-          <BirbWatcher
-            style={{
-              width: 121,
-              boxShadow:
-                '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
-              padding: '10px 0px 10px 10px',
-            }}
+            data-uid='e48'
           />
           <RiskTaker
             style={{
@@ -200,6 +201,7 @@ export var Profile = (props) => {
               transform: 'rotate(42deg)',
               borderRadius: '5px',
             }}
+            data-uid='ad9'
           />
           <Mixologist
             style={{
@@ -208,6 +210,7 @@ export var Profile = (props) => {
                 '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
               padding: '5px 0',
             }}
+            data-uid='3b1'
           />
           <AquaMan
             style={{
@@ -215,6 +218,7 @@ export var Profile = (props) => {
               boxShadow:
                 '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
             }}
+            data-uid='7bf'
           />
           <Wonderer
             style={{
@@ -223,6 +227,7 @@ export var Profile = (props) => {
                 '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
               borderRadius: '0 0 30% 30% ',
             }}
+            data-uid='94b'
           />
           <Tropicologist
             style={{
@@ -231,6 +236,7 @@ export var Profile = (props) => {
                 '0px 2px 4px 5px rgb(0, 0, 0, 0.12)',
               paddingTop: 5,
             }}
+            data-uid='36c'
           />
         </Checkerboard>
       </div>
