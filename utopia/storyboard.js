@@ -10,10 +10,9 @@ import { ImageContainer } from '/src/cardcomponents/imagecontainer.js'
 import { Profile } from '/src/profile.js'
 import { AquaMan } from '/src/stickers.js'
 import { Wonderer, Cryophile } from '/src/stickers.js'
-import { UserProPic } from '/src/pro-pic.js'
 
 export var storyboard = (
-  <Storyboard data-uid='0cd'>
+  <Storyboard>
     <Scene
       style={{
         width: 834,
@@ -22,9 +21,8 @@ export var storyboard = (
         top: -593,
       }}
       data-label='iPad Pro 11"'
-      data-uid='cc6'
     >
-      <App style={{}} data-uid='a28' />
+      <App style={{}} />
     </Scene>
     <DecorativeLines
       style={{
@@ -33,7 +31,6 @@ export var storyboard = (
         left: -199,
         top: 1198,
       }}
-      data-uid='97a'
     />
     <Description
       description='testing the card out la la la description'
@@ -44,12 +41,10 @@ export var storyboard = (
         padding: '5px 20px 14px 20px',
         borderRadius: '0px 0px 20px 0px',
       }}
-      data-uid='555'
     />
     <ImageContainer
       imageUrl='https://cdn.utopia.app/editor/sample-assets/martini.jpg'
       style={{ position: 'absolute', left: -198, top: 446 }}
-      data-uid='fbc'
     />
     <Stamp
       name='04 19 2011'
@@ -59,7 +54,6 @@ export var storyboard = (
         top: 498.5,
       }}
       color='var(--orange)'
-      data-uid='f7b'
     />
     <Rating
       rating={5}
@@ -71,7 +65,6 @@ export var storyboard = (
         borderRadius: 20,
       }}
       color='var(--orange)'
-      data-uid='163'
     />
     <Name
       text='Drink a Martini on Mount Everest'
@@ -81,7 +74,6 @@ export var storyboard = (
         left: 126,
         top: 1056,
       }}
-      data-uid='fa4'
     />
     <div
       style={{
@@ -93,7 +85,6 @@ export var storyboard = (
         height: 316,
         zIndex: -10,
       }}
-      data-uid='cef'
     />
     <Scene
       style={{
@@ -105,9 +96,8 @@ export var storyboard = (
         background: 'var(--yellow)',
       }}
       data-label='User Profile Page'
-      data-uid='c97'
     >
-      <Profile data-uid='aa2' />
+      <Profile />
     </Scene>
     <Wonderer
       style={{
@@ -117,7 +107,6 @@ export var storyboard = (
         width: 100,
         height: 100,
       }}
-      data-uid='b9d'
     />
     <Cryophile
       style={{
@@ -128,7 +117,6 @@ export var storyboard = (
         height: 100,
         borderRadius: 10,
       }}
-      data-uid='45e'
     />
   </Storyboard>
 )

@@ -12,8 +12,6 @@ import { Description } from './cardcomponents/description.js'
 import { Name } from './cardcomponents/name.js'
 import { Rating } from './cardcomponents/rating.js'
 import { ImageContainer } from './cardcomponents/imagecontainer.js'
-import { UserProPic } from '/src/pro-pic.js'
-import { Mixologist } from '/src/stickers.js'
 
 export var App = () => {
   return (
@@ -24,7 +22,6 @@ export var App = () => {
         display: 'flex',
         flexDirection: 'column',
       }}
-      data-uid='653'
     >
       <div
         style={{
@@ -39,7 +36,6 @@ export var App = () => {
           boxShadow: '0px 2px 33px #674168',
           left: 0,
         }}
-        data-uid='bf3'
       >
         <div
           style={{
@@ -54,23 +50,10 @@ export var App = () => {
             textShadow:
               '0px 1px 1px #646464, 0px 4px 1px rgba(0, 0, 0, 0.25)',
           }}
-          data-uid='e9f'
         >
           Things I want to do
         </div>
-        <Mixologist
-          style={{
-            backgroundColor: '/*#0091FFAA*/',
-            width: 204,
-            height: 180,
-            contain: 'layout',
-            borderRadius: 39,
-            borderTopRightRadius: '0px',
-            borderBottomLeftRadius: '0px',
-          }}
-          data-uid='e22'
-        />
-        <div style={{ width: '130%' }} data-uid='774'>
+        <div style={{ width: '130%' }}>
           <div
             style={{
               color: 'var(--orange)',
@@ -84,28 +67,10 @@ export var App = () => {
               textShadow:
                 '0px 1px 1px #646464, 0px 8px 1px rgba(0, 0, 0, 0.25)',
             }}
-            data-uid='f58'
           >
             BBeffore I Go
           </div>
         </div>
-        <UserProPic
-          style={{
-            borderRadius: '50%',
-            border: '6px solid var(--purple)',
-            overflow: 'hidden',
-            background: 'var(--orange)',
-            flexBasis: 160,
-            height: 160,
-            contain: 'layout',
-            width: 160,
-            position: 'absolute',
-            left: 663,
-            top: 23,
-          }}
-          color='var(--purple)'
-          data-uid='c99'
-        />
         <div
           className='category-container'
           style={{
@@ -113,28 +78,25 @@ export var App = () => {
             flexDirection: 'row',
             alignItems: 'flex-start',
             padding: '0px 0px 0px 40px',
-            gap: 82,
+            gap: 25,
             width: '100%',
             height: '55px',
             overflowX: 'scroll',
           }}
-          data-uid='049'
         >
           <ClearCategoriesButton
             style={{
               borderRadius: '50px',
               padding: '0px 18px',
             }}
-            data-uid='06d'
           />
           <CategoryItem
             selected={false}
             name='aquatic'
             style={{
-              padding: '7px 27px 13px 14px',
+              padding: '13px 27px',
               borderRadius: '50px',
             }}
-            data-uid='9fa'
           />
           <CategoryItem
             selected={false}
@@ -143,7 +105,6 @@ export var App = () => {
               padding: '13px 27px',
               borderRadius: '50px',
             }}
-            data-uid='193'
           />
           <CategoryItem
             selected={false}
@@ -152,7 +113,6 @@ export var App = () => {
               padding: '13px 27px',
               borderRadius: '50px',
             }}
-            data-uid='d48'
           />
           <CategoryItem
             selected={false}
@@ -161,7 +121,6 @@ export var App = () => {
               padding: '13px 27px',
               borderRadius: '50px',
             }}
-            data-uid='e62'
           />
           <CategoryItem
             selected={false}
@@ -170,7 +129,6 @@ export var App = () => {
               padding: '13px 27px',
               borderRadius: '50px',
             }}
-            data-uid='96a'
           />
           <CategoryItem
             selected={false}
@@ -179,10 +137,19 @@ export var App = () => {
               padding: '13px 27px',
               borderRadius: '50px',
             }}
-            data-uid='fba'
           />
         </div>
       </div>
+      <Stamp
+        name='06 05 2022'
+        style={{
+          position: 'absolute',
+          top: 312,
+          left: 564,
+          zIndex: 1000,
+        }}
+        color='var(--yellow)'
+      />
       <div
         style={{
           width: '100%',
@@ -192,7 +159,6 @@ export var App = () => {
           flexDirection: 'column',
           gap: 0,
         }}
-        data-uid='579'
       >
         <div
           style={{
@@ -203,7 +169,6 @@ export var App = () => {
             flexDirection: 'column',
             alignItems: 'flex-end',
           }}
-          data-uid='f25'
         >
           <div
             style={{
@@ -212,16 +177,14 @@ export var App = () => {
               overflow: 'visible',
               zIndex: 10,
             }}
-            data-uid='700'
           >
-            <DecorativeLines data-uid='ad6' />
+            <DecorativeLines />
             <div
               style={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
               }}
-              data-uid='efa'
             >
               <Description
                 description='Not as attentive as a real Butler, and only being able to hold drinks seems more like a luxury than work. Nonethelesss, we will keep him.'
@@ -229,14 +192,12 @@ export var App = () => {
                   padding: '5px 20px 14px 20px',
                   borderRadius: '0px 0px 20px 0px',
                 }}
-                data-uid='e5d'
               />
             </div>
           </div>
           <ImageContainer
             imageUrl='https://cdn.utopia.app/editor/sample-assets/flamingo.jpg'
             style={{}}
-            data-uid='c5a'
           />
           <div
             style={{
@@ -248,12 +209,10 @@ export var App = () => {
               height: 120,
               zIndex: 10,
             }}
-            data-uid='f06'
           >
             <Name
               text='Hire a Pool Flamingo as a Butler'
               style={{ padding: 0 }}
-              data-uid='1ae'
             />
             <Rating
               rating={2}
@@ -262,20 +221,8 @@ export var App = () => {
                 borderRadius: 20,
               }}
               color='var(--yellow)'
-              data-uid='7f8'
             />
           </div>
-          <Stamp
-            name='06 05 2022'
-            style={{
-              position: 'absolute',
-              top: 578,
-              left: 594,
-              zIndex: 1000,
-            }}
-            color='var(--yellow)'
-            data-uid='061'
-          />
         </div>
         <div
           style={{
@@ -287,7 +234,6 @@ export var App = () => {
             alignItems: 'flex-end',
             paddingTop: '9px',
           }}
-          data-uid='f15'
         >
           <div
             style={{
@@ -296,22 +242,19 @@ export var App = () => {
               overflow: 'visible',
               zIndex: 10,
             }}
-            data-uid='75f'
           >
-            <DecorativeLines data-uid='c6c' />
+            <DecorativeLines />
             <div
               style={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
               }}
-              data-uid='101'
             >
               <Stamp
                 name='08 28 2021'
                 style={{ top: -160, left: 40 }}
                 color='var(--orange)'
-                data-uid='149'
               />
               <Description
                 description='After hearing people rave about them, I just had to go see for myself. They even kept me up at night while I was staying in Iceland.'
@@ -320,14 +263,10 @@ export var App = () => {
                   borderRadius: '0px 0px 0px 20px',
                   padding: '5px 20px 14px 20px',
                 }}
-                data-uid='522'
               />
             </div>
           </div>
-          <ImageContainer
-            imageUrl='https://cdn.utopia.app/editor/sample-assets/northernlights.jpg'
-            data-uid='940'
-          />
+          <ImageContainer imageUrl='https://cdn.utopia.app/editor/sample-assets/northernlights.jpg' />
           <div
             style={{
               display: 'flex',
@@ -338,12 +277,10 @@ export var App = () => {
               height: 120,
               zIndex: 10,
             }}
-            data-uid='e69'
           >
             <Name
               text='See the Northern Lights'
               style={{ padding: 0, textAlign: 'left' }}
-              data-uid='330'
             />
             <Rating
               rating={3}
@@ -352,7 +289,6 @@ export var App = () => {
                 borderRadius: 20,
               }}
               color='var(--orange)'
-              data-uid='0f0'
             />
           </div>
         </div>
@@ -365,7 +301,6 @@ export var App = () => {
             flexDirection: 'column',
             alignItems: 'flex-end',
           }}
-          data-uid='30e'
         >
           <div
             style={{
@@ -374,16 +309,14 @@ export var App = () => {
               overflow: 'visible',
               zIndex: 10,
             }}
-            data-uid='bc8'
           >
-            <DecorativeLines data-uid='c90' />
+            <DecorativeLines />
             <div
               style={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
               }}
-              data-uid='390'
             >
               <Description
                 description='Its always been a goal of mine to retire early, become an old geezer, and learn to sail a little boat in the bay. I dont know what else to do now.'
@@ -391,7 +324,6 @@ export var App = () => {
                   padding: '5px 20px 14px 20px',
                   borderRadius: '0px 0px 20px 0px',
                 }}
-                data-uid='8dd'
               />
               <Stamp
                 name='07 17 2019'
@@ -401,14 +333,12 @@ export var App = () => {
                   marginTop: -20,
                 }}
                 color='var(--yellow)'
-                data-uid='7c7'
               />
             </div>
           </div>
           <ImageContainer
             imageUrl='https://cdn.utopia.app/editor/sample-assets/boat.jpg'
             style={{}}
-            data-uid='95e'
           />
           <div
             style={{
@@ -422,12 +352,10 @@ export var App = () => {
               height: 120,
               zIndex: 10,
             }}
-            data-uid='dbd'
           >
             <Name
               text='Learn to Sail A Boat'
               style={{ padding: 0 }}
-              data-uid='c6a'
             />
             <Rating
               rating={4}
@@ -436,7 +364,6 @@ export var App = () => {
                 borderRadius: 20,
               }}
               color='var(--yellow)'
-              data-uid='d96'
             />
           </div>
         </div>
@@ -449,7 +376,6 @@ export var App = () => {
           zIndex: '100',
           boxShadow: '0px -2px 33px #674168',
         }}
-        data-uid='b69'
       />
     </div>
   )
