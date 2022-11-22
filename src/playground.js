@@ -15,8 +15,8 @@ export var Playground = () => {
         style={{
           height: 150,
           position: 'absolute',
-          left: 154,
-          top: 134,
+          left: 42,
+          top: 76,
         }}
         data-uid='b15'
       >
